@@ -1,16 +1,18 @@
 import React from "react";
 import HPBLogo from "../HPBLogo/HPBLogo";
-import ItemListContainer from "../ItemListContainer/ItemListContainer";
+
 import CartWidget from "../CartWidget/CartWidget";
+import NavItem from "../NavItem/NavItem";
 
-const secciones = ["Tienda", "Fotos", "Contacto"];
 
-const NavBar = ({ id, clase }) => {
+const NavBar = ({ id, clase, secciones }) => {
   return (
     <div id={id} className={clase}>
       <HPBLogo />
       <ul className={clase}>
-        <ItemListContainer categorias={secciones} />
+        <NavItem texto={secciones[0]}/>
+        <NavItem texto={secciones[1]}/>
+        <NavItem texto={secciones[2]}/>
         <CartWidget />
       </ul>
     </div>

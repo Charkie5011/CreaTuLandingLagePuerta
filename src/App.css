@@ -65,3 +65,24 @@
   margin-inline: 1rem;
   width: 30%;
 }
+
+.shopDisplay{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-block: 4rem;
+}
+
+.shopItem{
+  background-color: #e4e4e4;
+  width: max-content;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 4px;
+}

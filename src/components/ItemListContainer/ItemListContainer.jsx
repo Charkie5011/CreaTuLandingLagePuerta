@@ -1,13 +1,13 @@
 import React from "react";
-import NavItem from "../NavItem/NavItem";
+import ShopItems from "../ShopItems/ShopItems";
 
-const ItemListContainer = ({ categorias }) => {
+
+const ItemListContainer = ({ Texto }) => {
   return (
-    <>
-      <NavItem texto={categorias[0]} />
-      <NavItem texto={categorias[1]} />
-      <NavItem texto={categorias[2]} />
-    </>
+    <div className="shopDisplay">
+      <ShopItems textoItem = {Texto}/>
+    </div>
+   
   );
 };
 
