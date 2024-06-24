@@ -6,7 +6,7 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 function App() {
   
 const secciones = ["Home","Galeria","AboutUs"];
-const itemsTienda=["Cosa1","Cosa2"];
+const itemsTienda=["Cosa1"];
 
   return (
     <>

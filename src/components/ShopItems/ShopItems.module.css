@@ -1,0 +1,33 @@
+.shopItem{
+    background-color: #e4e4e4;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 4px;
+        margin-block: 0.5rem;
+  }
+
+.imgPrincipal{
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+.imgSecundaria{
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    justify-content: space-around;
+    gap: 0.5rem;
+    margin-block: 0.5rem;
+}
+
+.imgSecundaria img{
+    border-radius: 4px;
+    width: 10em;
+    height: 9em;
+    object-fit: cover;
+}
