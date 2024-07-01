@@ -2,13 +2,35 @@
     background-color: #e4e4e4;
     padding: 8px;
     border-radius: 8px;
+    margin: 1vw;
+    margin-block: 0.5rem;
+    max-width: 25%;
+  }
+
+  .itemHeading{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    justify-content: space-around;
     align-items: center;
-    margin: 4px;
-        margin-block: 0.5rem;
+    flex-direction: row;
+  }
+
+  .itemHeading h3{
+    margin: 0;
+    padding: 0;
+  }
+  .itemHeading p{
+    margin: 0;
+    padding: 0;
+  }
+
+  .itemData{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .itemData h4{
+    color: brown;
   }
 
 .imgPrincipal{
