@@ -6,16 +6,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const secciones = ["Home", "Galeria", "AboutUs"];
-  const titulo = "Showroom";
 
   return (
     <BrowserRouter>
       <NavBar id={"NavPrincipal"} clase={"Nav"} secciones={secciones} />
       <Routes>
-        <Route
-          path="/"
-          element={<ItemListContainer Texto={titulo} />}
-        />
+        <Route path="/" element={<ItemListContainer/>}/>
+        <Route path="/brands/:brandId" element={<ItemListContainer/>}/>
       </Routes>
     </BrowserRouter>
   );

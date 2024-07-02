@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./ShopItems.module.css";
+import { Link } from "react-router-dom";
 
 const ShopItems = ({ textoItem, marca, categoria, precio, stock, imagen }) => {
   return (
@@ -14,7 +15,9 @@ const ShopItems = ({ textoItem, marca, categoria, precio, stock, imagen }) => {
         <p>{stock} Disponibles</p>
       </div>
       <p>{categoria}</p>
-      
+      <div>
+        <Link >Ver detalle</Link>
+      </div>
     </div>
   );
 };

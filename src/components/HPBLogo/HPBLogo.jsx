@@ -1,11 +1,12 @@
 import React from "react";
-import HPBBlack from "../../../src/assets/HPBBlack.png";
+import HPBBlack from "../../../src/assets/1SS-Logo02PureBlack.png";
+import { Link } from "react-router-dom";
 
 const HPBLogo = () => {
   return (
-    <>
-      <img src={HPBBlack} alt={"Logo"} width={200} height={100} />
-    </>
+    <Link to={'/'}>
+      <img src={HPBBlack} alt={"Logo"} width={360} height={90} />
+    </Link>
   );
 };
 
