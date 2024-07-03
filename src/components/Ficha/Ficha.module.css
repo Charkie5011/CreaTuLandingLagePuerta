@@ -1,0 +1,15 @@
+.ficha{
+    display: flex;
+    text-align: justify;
+    gap: 2rem;
+}
+
+.fichaData{
+    width: 35rem;
+    text-align: left;
+    border-style: solid;
+    border-width: 0.1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: monospace;
+}

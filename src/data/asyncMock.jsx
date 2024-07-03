@@ -3,7 +3,7 @@ export const productos = [
     id: 0,
     name: "Blista Super Secret Pre-serie",
     brand: "Dinka",
-    price: 2000000,
+    price: 200000,
     category: "compacts",
     ficha: {
       description:
@@ -26,7 +26,7 @@ export const productos = [
     id: 1,
     name: "Blista Super Secret",
     brand: "Dinka",
-    price: 1000000,
+    price: 50000,
     category: "compacts",
     ficha: {
       description:
@@ -72,7 +72,7 @@ export const productos = [
     id: 3,
     name: "Elegy RH5 Super Secret",
     brand: "Annis",
-    price: 1045000,
+    price: 100000,
     category: "coupes",
     ficha: {
       description:
@@ -95,7 +95,7 @@ export const productos = [
     id: 4,
     name: "Elegy RH5 Super Secret V6",
     brand: "Annis",
-    price: 200500,
+    price: 200000,
     category: "coupes",
     ficha: {
       description:
@@ -118,7 +118,7 @@ export const productos = [
     id: 5,
     name: "Growler Super Secret",
     brand: "Pfister",
-    price: 1070000,
+    price: 90000,
     category: "sports",
     ficha: {
       description:
@@ -141,7 +141,7 @@ export const productos = [
     id: 6,
     name: "RT3000 Super Secret",
     brand: "Dinka",
-    price: 1020000,
+    price: 75000,
     category: "coupes",
     ficha: {
       description:
@@ -164,7 +164,7 @@ export const productos = [
     id: 7,
     name: "Savestra HPB",
     brand: "Annis",
-    price: 1027000,
+    price: 300000,
     category: "sportsclassics",
     ficha: {
       description:
@@ -187,7 +187,7 @@ export const productos = [
     id: 8,
     name: "Euros JDM Super Secret",
     brand: "Annis",
-    price: 1040000,
+    price: 100000,
     category: "coupes",
     ficha: {
       description:
@@ -210,7 +210,7 @@ export const productos = [
     id: 9,
     name: "Remus",
     brand: "Annis",
-    price: 1016000,
+    price: 50000,
     category: "coupes",
     ficha: {
       description:
@@ -233,7 +233,7 @@ export const productos = [
     id: 10,
     name: "ZR 350",
     brand: "Annis",
-    price: 1041000,
+    price: 80000,
     category: "sports",
     ficha: {
       description:
@@ -280,6 +280,17 @@ export const getProductsByCategory = (category) => {
 
     setTimeout(() => {
       resolve(productosFiltrados);
+    }, 2000);
+  });
+};
+
+export const getProductsById = (id) => {
+  return new Promise((resolve) => {
+    console.log("buscando "+id);
+    const prodFiltrado = productos.find((prod) => prod.id == id);
+    setTimeout(() => {
+      console.log(prodFiltrado);
+      resolve(prodFiltrado);
     }, 2000);
   });
 };
