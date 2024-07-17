@@ -3,7 +3,6 @@ import ShopItems from "../ShopItems/ShopItems";
 import style from "./ItemList.module.css";
 
 const ItemList = ({ stock }) => {
-  console.log(stock);
   return (
     <div className={style.shopDisplay}>
       {stock.map((producto) => (

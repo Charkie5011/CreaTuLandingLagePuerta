@@ -1,6 +1,5 @@
 export const productos = [
   {
-    id: 0,
     name: "Blista Super Secret Pre-serie",
     brand: "Dinka",
     price: 200000,
@@ -23,7 +22,6 @@ export const productos = [
     img: "https://i.imgur.com/BQ7MpnF.jpeg",
   },
   {
-    id: 1,
     name: "Blista Super Secret",
     brand: "Dinka",
     price: 50000,
@@ -46,7 +44,6 @@ export const productos = [
     img: "https://i.imgur.com/DQp80Yc.jpeg",
   },
   {
-    id: 2,
     name: "Comet S2 Super Secret",
     brand: "Pfister",
     price: 150000,
@@ -69,7 +66,6 @@ export const productos = [
     img: "https://i.imgur.com/1VJpKmL.jpeg",
   },
   {
-    id: 3,
     name: "Elegy RH5 Super Secret",
     brand: "Annis",
     price: 100000,
@@ -92,7 +88,6 @@ export const productos = [
     img: "https://i.imgur.com/R8liEPa.jpeg",
   },
   {
-    id: 4,
     name: "Elegy RH5 Super Secret V6",
     brand: "Annis",
     price: 200000,
@@ -115,7 +110,6 @@ export const productos = [
     img: "https://i.imgur.com/qPEWA7f.jpeg",
   },
   {
-    id: 5,
     name: "Growler Super Secret",
     brand: "Pfister",
     price: 90000,
@@ -138,7 +132,6 @@ export const productos = [
     img: "https://i.imgur.com/ZbaeYZI.jpeg",
   },
   {
-    id: 6,
     name: "RT3000 Super Secret",
     brand: "Dinka",
     price: 75000,
@@ -161,7 +154,6 @@ export const productos = [
     img: "https://i.imgur.com/5Q6B7Ci.jpeg",
   },
   {
-    id: 7,
     name: "Savestra HPB",
     brand: "Annis",
     price: 300000,
@@ -184,7 +176,6 @@ export const productos = [
     img: "https://i.imgur.com/hpaqOVs.jpeg",
   },
   {
-    id: 8,
     name: "Euros JDM Super Secret",
     brand: "Annis",
     price: 100000,
@@ -207,7 +198,6 @@ export const productos = [
     img: "https://i.imgur.com/Y7mENSe.jpeg",
   },
   {
-    id: 9,
     name: "Remus",
     brand: "Annis",
     price: 50000,
@@ -230,7 +220,6 @@ export const productos = [
     img: "https://i.imgur.com/sBdehtw.jpeg",
   },
   {
-    id: 10,
     name: "ZR 350",
     brand: "Annis",
     price: 80000,

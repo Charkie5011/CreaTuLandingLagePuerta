@@ -8,7 +8,7 @@ const ItemDetailScreen = ({data}) => {
     <div className={style.ItemDetail}>
       <img src={data.img} />
       <h2>{data.name}</h2>
-      <>Mas info proximamente</>
+      <Ficha dataFicha={data.ficha}/>
     </div>
   );
 }
