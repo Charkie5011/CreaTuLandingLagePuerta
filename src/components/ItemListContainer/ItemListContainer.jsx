@@ -23,7 +23,6 @@ const ItemListContainer = () => {
         : query(coleccion, where("brand", "==", brandId));
 
       const response = await getDocs(queryRef);
-      console.log(response);
 
       const cars = response.docs.map((doc) => {
         const newItem = { ...doc.data(), id: doc.id };
@@ -34,7 +33,6 @@ const ItemListContainer = () => {
     };
     getDataBase();
   }, [brandId]);
-  console.log(productos);
   return (
     <div className={style.itemListContainer}>
       <h3>Showroom</h3>

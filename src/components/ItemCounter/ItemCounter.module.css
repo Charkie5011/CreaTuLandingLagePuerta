@@ -1,0 +1,12 @@
+.itemCounter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw
+}
+
+.itemCounter button{
+    margin-inline: 1rem;
+    background-color: #f2d13b;
+}

@@ -23,13 +23,14 @@ const ItemDetailContainer = () => {
     };
     getData();
   }, []);
-  console.log(product);
   return (
     <div>
       {loading ? (
         <RotateLoader />
       ) : (
-      <ItemDetailScreen data={product} />
+        <ItemDetailScreen
+        {...product}
+        />
       )}
     </div>
   );

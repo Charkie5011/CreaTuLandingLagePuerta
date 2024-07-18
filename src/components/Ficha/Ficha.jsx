@@ -2,7 +2,6 @@ import React from "react";
 import style from "./Ficha.module.css"
 
 const Ficha = ({ dataFicha }) => {
-  console.log(dataFicha);
   return (
     <div className={style.ficha}>
       <p>{dataFicha.description}</p>

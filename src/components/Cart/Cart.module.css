@@ -1,0 +1,27 @@
+.cartTable{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+}
+
+.cartTable table{
+    width: 100%;
+    padding-inline: 10rem;
+    gap: 0;
+}
+
+.cartTable thead{
+    width: 100%;
+    background-color: #f2d13b;
+}
+.cartTable tbody{
+    width: 100%;
+    text-align: center;
+}
+
+  .cartTable img{
+    width: 100%;
+    height: auto;
+  }

@@ -1,15 +1,27 @@
-.ItemDetail{
-    display: flex;
-    margin: 1% 20%;
-    flex-direction: column;
-    align-items: flex-start;
+.ItemDetail {
+  display: flex;
+  margin: 1% 20%;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.ItemDetail img{
-    width: 100%;
-    height: auto;
+.ItemDetail img {
+  width: 100%;
+  height: auto;
 }
 
-.ItemDetail h2{
-    font-size: 2rem;
+.ItemDetail h2 {
+  font-size: 2rem;
+}
+#carTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#unidadesDisponibles{
+    margin-block: 0;
+    font-weight: 650;
 }

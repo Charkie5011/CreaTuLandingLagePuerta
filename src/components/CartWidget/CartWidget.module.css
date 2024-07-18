@@ -1,0 +1,12 @@
+.cartWidget{
+    display: flex;
+   
+    padding-inline: 0.5rem;
+    border: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+    margin: 0;
+    align-items: center;
+    column-gap: 1rem;
+}
