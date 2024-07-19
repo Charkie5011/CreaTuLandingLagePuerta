@@ -1,39 +1,35 @@
 import React, { useContext } from "react";
 import Context from "../../context/CartContext";
-import style from "./Cart.module.css"
+import style from "./Cart.module.css";
 
 const Cart = () => {
   const { cart, removeItem, clearCart, getTotalPrecio } = useContext(Context);
   return (
-    <div className={style.cartTable}>
-      <table>
-        <thead>
-          <tr>
-            <th></th>
-            <th>Modelo</th>
-            <th>Cantidad</th>
-            <th>Precio</th>
-            <th>Sub total</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          {cart.map((prod) => (
-            <tr>
-                <td>
-                    <img src={prod.img}/>
-                </td>
-              <td>
-                {prod.name}
-              </td>
-              <td>{prod.cantidad}</td>
-              <td>{prod.price}</td>
-              <td>{prod.price * prod.cantidad}</td>
-              <td>{}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div id={style.cartContainer}>
+      {cart.map((prod) => (
+        <div className={style.cartItem} key={prod.id}>
+          <div className={style.cartItemImgWrapper}>
+            <img src={prod.img} />
+          </div>
+          <div id={style.cartItemHeader}>
+            <h5>{prod.name}</h5>
+          </div>
+          <div id={style.cartItemInfo}>
+            <p>Unidades: {prod.cantidad}</p>
+            <p>Precio por unidad:{prod.price}</p>
+            <p>Subtotal: {prod.price * prod.cantidad}</p>
+          </div>
+          <div>
+            <button onClick={() => removeItem(prod.id)}>X</button>
+          </div>
+        </div>
+      ))}
+      <div className={style.cartFoot}>
+        <h3>Total: ${getTotalPrecio()}</h3>
+        <button onClick={() => clearCart()}>Vaciar Carrito</button>
+        <h4>Finalizar Compra</h4>
+        {/*hacer link que lleva a checkout form*/}
+      </div>
     </div>
   );
 };

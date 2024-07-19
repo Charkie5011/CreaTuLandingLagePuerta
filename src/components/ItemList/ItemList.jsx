@@ -6,7 +6,7 @@ const ItemList = ({ stock }) => {
   return (
     <div className={style.shopDisplay}>
       {stock.map((producto) => (
-        <ShopItems
+        <ShopItems key={producto.id}
         marca={producto.brand}
           textoItem={producto.name}
           categoria={producto.category}
