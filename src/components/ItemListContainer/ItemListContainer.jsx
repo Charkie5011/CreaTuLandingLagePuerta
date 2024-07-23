@@ -38,7 +38,9 @@ const ItemListContainer = () => {
       <h3>Showroom</h3>
       <FilterContainer />
       {loading ? (
+        <div className={style.rotatorContainer}>
         <RotateLoader />
+        </div>
       ) : (
         <ItemList className="shopDisplay" stock={productos} />
       )}

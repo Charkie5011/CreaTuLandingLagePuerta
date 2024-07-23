@@ -3,10 +3,10 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 40vw
+    font-size: small;
 }
 
 .itemCounter button{
-    margin-inline: 1rem;
+    margin-inline: 0.1rem;
     background-color: #f2d13b;
 }

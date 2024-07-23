@@ -1,0 +1,60 @@
+.formInputContainer{
+    margin-inline: 20%;
+    margin-block: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #efefef;
+    border-radius: 8px;
+    box-shadow: 1px 5px 9px 0px rgba(0,0,0,0.56);
+-webkit-box-shadow: 1px 5px 9px 0px rgba(0,0,0,0.56);
+-moz-box-shadow: 1px 5px 9px 0px rgba(0,0,0,0.56);
+}
+
+.formInputContainer form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+    margin-right: 10%;
+}
+
+.formInputContainer div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    column-gap: 8px;
+}
+
+.formInputContainer input{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    border-style: none;
+    padding: 0.5rem;
+    width: 50%;
+}
+
+.formInputContainer img{
+    width: 100%;
+    height: auto;
+}
+
+.formInputContainer h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.formInputContainer span{
+    font-size: smaller;
+    color: rgb(226, 18, 18);
+}
+
+.formInputContainer button:hover{
+    background-color: #f2d13b;
+}
+
+#contendorImagenCheckout{
+    overflow: hidden;
+}

@@ -7,12 +7,12 @@ const ItemList = ({ stock }) => {
     <div className={style.shopDisplay}>
       {stock.map((producto) => (
         <ShopItems key={producto.id}
-        marca={producto.brand}
-          textoItem={producto.name}
-          categoria={producto.category}
-          precio={producto.price}
+        brand={producto.brand}
+          name={producto.name}
+          category={producto.category}
+          price={producto.price}
           stock={producto.stock}
-          imagen={producto.img}
+          img={producto.img}
           id={producto.id}
         />
       ))}

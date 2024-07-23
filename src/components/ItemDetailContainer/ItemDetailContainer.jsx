@@ -5,6 +5,7 @@ import { getProductsById } from "../../data/asyncMock";
 import { doc, getDoc } from "firebase/firestore";
 import { dataBase } from "../../config/firebase";
 import { RotateLoader } from "react-spinners";
+import style from "./ItemDetailContainer.module.css"
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
@@ -26,11 +27,11 @@ const ItemDetailContainer = () => {
   return (
     <div>
       {loading ? (
-        <RotateLoader />
+        <div className={style.rotatorContainer}>
+          <RotateLoader />
+        </div>
       ) : (
-        <ItemDetailScreen
-        {...product}
-        />
+        <ItemDetailScreen {...product} />
       )}
     </div>
   );

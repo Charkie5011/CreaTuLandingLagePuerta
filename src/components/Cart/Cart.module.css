@@ -34,10 +34,6 @@ border-radius: 8px;
   background-color: #e02b2ba7;
 }
 
-#cartItemHeader{}
-
-#cartItemInfo{}
-
 .cartFoot{
   display: flex;
     flex-direction: row;
@@ -47,4 +43,15 @@ border-radius: 8px;
 
 .cartFoot button:hover{
   background-color:#e02b2ba7 ;
+}
+
+.noItemsMessage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 8rem;
+  margin-inline: 30%;
+  border-radius: 8px;
+  padding-block: 2rem;
+  border: 3px solid #000000;
 }

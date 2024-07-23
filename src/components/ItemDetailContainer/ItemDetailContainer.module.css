@@ -1,9 +1,3 @@
-.itemListContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .rotatorContainer{
     display: flex;
     flex-direction: column;
