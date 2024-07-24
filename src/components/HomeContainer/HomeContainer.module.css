@@ -1,0 +1,35 @@
+.carruselContainer{
+    margin-inline: 20%;
+    padding: 0px;
+    
+}
+
+.carruselContainer img{
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.aboutUsSection{
+    display: flex;
+    margin-inline: 10%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutUsSection img{
+    width: 100%;
+    height: auto;
+}
+
+#bajadaAboutUsSection{
+    display: flex;
+    flex-direction: row;
+    margin-inline: 10%;
+}
+.showRoomLink{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

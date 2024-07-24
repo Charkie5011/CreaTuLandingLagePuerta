@@ -7,16 +7,19 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import { CartContextProvider } from "./context/CartContext";
 import Cart from "./components/Cart/Cart";
 import Checkout from "./components/Checkout/Checkout";
+import HomeContainer from "./components/HomeContainer/HomeContainer";
 
 function App() {
-  const secciones = ["Home", "Galeria", "AboutUs"];
+  const secciones = ["home","showroom"];
 
   return (
     <CartContextProvider>
       <BrowserRouter>
         <NavBar id={"NavPrincipal"} clase={"Nav"} secciones={secciones} />
         <Routes>
-          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/" element={<HomeContainer/>}/>
+          <Route path="/home" element={<HomeContainer/>}/>
+          <Route path="/showroom" element={<ItemListContainer />} />
           <Route path="/brands/:brandId" element={<ItemListContainer />} />
           <Route path="/product/:prodId" element={<ItemDetailContainer />} />
           <Route path="/cart" element={<Cart/>}/>

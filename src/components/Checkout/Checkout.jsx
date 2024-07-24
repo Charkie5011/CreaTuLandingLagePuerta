@@ -3,7 +3,7 @@ import style from "./Checkout.module.css";
 import Context from "../../context/CartContext";
 import { addDoc, collection, Timestamp } from "firebase/firestore";
 import { dataBase } from "../../config/firebase";
-import Swal from 'sweetalert2'
+import Swal from "sweetalert2";
 
 const Checkout = () => {
   const [user, setUser] = useState({
@@ -78,15 +78,14 @@ const Checkout = () => {
       };
 
       const orderRef = await addDoc(ordersCollection, order);
-      clearCart()
-      //no anda
+      clearCart();
       Swal.fire({
-        title: 'Compra exitosa!',
+        title: "Compra exitosa!",
         text: `su numero de orden es : ${orderRef.id}`,
-        icon: 'success',
-        confirmButtonText: 'Ok'
-      })
-      navigate('/')
+        icon: "success",
+        confirmButtonText: "Ok",
+      });
+      navigate("/");
     } catch (error) {
       console.log(error);
     }
@@ -99,60 +98,70 @@ const Checkout = () => {
       </div>
       <form>
         <h2>Finalizar compra</h2>
-        <div>
+        <div className={style.formInputs}>
           <p>Nombre</p>
-          <input
-            type="text"
-            id="nombre"
-            name="name"
-            placeholder="Nombre"
-            onChange={updateUser}
-          ></input>
-          <span>{error.name}</span>
+          <div className={style.textInputsWrap}>
+            <input
+              type="text"
+              id="nombre"
+              name="name"
+              placeholder="Nombre"
+              onChange={updateUser}
+            ></input>
+            <span>{error.name}</span>
+          </div>
         </div>
-        <div>
+        <div className={style.formInputs}>
           <p>Apellido</p>
-          <input
-            type="text"
-            id="apellido"
-            name="lastName"
-            placeholder="Apellido"
-            onChange={updateUser}
-          ></input>
-          <span>{error.lastName}</span>
+          <div className={style.textInputsWrap}>
+            <input
+              type="text"
+              id="apellido"
+              name="lastName"
+              placeholder="Apellido"
+              onChange={updateUser}
+            ></input>
+            <span>{error.lastName}</span>
+          </div>
         </div>
-        <div>
+        <div className={style.formInputs}>
           <p>Email</p>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            onChange={updateUser}
-          ></input>
-          <span>{error.email}</span>
+          <div className={style.textInputsWrap}>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              onChange={updateUser}
+            ></input>
+            <span>{error.email}</span>
+          </div>
         </div>
-        <div>
+        <div className={style.formInputs}>
           <p>Confirmar Email</p>
-          <input
-            type="email"
-            id="confirmEmail"
-            name="repeatedEmail"
-            placeholder="Confirmar email"
-            onChange={updateUser}
-          ></input>
-          <span>{error.repeatedEmail}</span>
+          <div className={style.textInputsWrap}>
+            <input
+              type="email"
+              id="confirmEmail"
+              name="repeatedEmail"
+              placeholder="Confirmar email"
+              onChange={updateUser}
+            ></input>
+            <span>{error.repeatedEmail}</span>
+          </div>
         </div>
-        <div>
+        <div className={style.formInputs}>
           <p>Telefono</p>
-          <input
-            type="tel"
-            id="telefono"
-            name="phone"
-            placeholder="Telefono"
-            onChange={updateUser}
-          ></input>
-          <span>{error.phone}</span>
+          <div className={style.textInputsWrap}>
+            <input
+              type="tel"
+              id="telefono"
+              name="phone"
+              placeholder="Telefono"
+              onChange={updateUser}
+            ></input>
+            <span>{error.phone}</span>
+          </div>
         </div>
         <button type="button" onClick={getOrder}>
           Finalizar Compra

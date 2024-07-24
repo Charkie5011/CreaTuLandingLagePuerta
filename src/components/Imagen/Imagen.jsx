@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const Imagen = ({fuente}) => {
+const Imagen = ({ fuente }) => {
   return (
     <>
-    <img src={fuente}/>
+      <img src={fuente} />
     </>
-  )
-}
+  );
+};
 
-export default Imagen
+export default Imagen;

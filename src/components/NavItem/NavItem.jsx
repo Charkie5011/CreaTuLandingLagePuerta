@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavItem = ({ texto }) => {
   return (
     <li>
-      <a>{texto}</a>
+      <Link to={`/${texto}`}>{texto}</Link>
     </li>
   );
 };
