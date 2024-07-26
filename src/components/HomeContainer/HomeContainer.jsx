@@ -64,13 +64,13 @@ const HomeContainer = () => {
           <FaArrowRight />
         </button>
       </div>
-      <div className={style.aboutUsSection}>
-        <h4>No le digas a nadie</h4>
-      </div>
-      <div className={style.showRoomLink}>
-        <Link to={"/showroom"}>
-          <button >Showroom</button>
-        </Link>
+      <div className={style.enunciado}>
+        <h1>No le digas a nadie</h1>
+        <div className={style.showRoomLink}>
+          <Link to={"/showroom"}>
+            <button>Showroom</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

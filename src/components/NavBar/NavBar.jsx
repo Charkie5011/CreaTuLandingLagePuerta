@@ -10,9 +10,9 @@ const NavBar = ({ id, clase, secciones }) => {
     <div id={id} className={clase}>
       <HPBLogo />
       <ul className={clase}>
-        <NavItem texto={secciones[0]}/>
-        <NavItem texto={secciones[1]}/>
-        <NavItem texto={secciones[2]}/>
+        {
+          secciones.map((element) => (<NavItem texto={element}/>))
+        }
         <CartWidget />
       </ul>
     </div>

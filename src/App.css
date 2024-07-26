@@ -48,6 +48,13 @@
   background-color: #f2d13b;
   justify-content: space-between;
   align-items: center;
+  
+}
+
+#NavPrincipal{
+  box-shadow: 1px 5px 9px 0px rgba(0,0,0,0.56);
+  -webkit-box-shadow: 1px 5px 9px 0px rgba(0,0,0,0.56);
+  -moz-box-shadow: 1px 5px 9px 0px rgba(0,0,0,0.56);
 }
 
 .Nav a {
